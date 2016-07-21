@@ -76,7 +76,7 @@ class Comment extends CActiveRecord
             array('email', 'email'),
             array('user_id', 'required', 'message' => 'Please login to left the comment'),
             array('file', 'validateFile'),
-            //array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+            array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
         );
     }
 
